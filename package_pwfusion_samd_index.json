@@ -13,8 +13,8 @@
                     "category": "Contributed",
                     "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.00.10.zip",
                     "archiveFileName": "PwFusion_SAMD_00.00.10.zip",
-                    "checksum": "SHA-256:9F7E80826FF17C3C202C3E0EAD0457A27DC4F09128E708D4BEA4A98DD8A2291D",
-                    "size": "1681992",
+                    "checksum": "SHA-256:45A4745ED2E73CAA4F822E5ECCEFC8F2CDEE3A217AC25E991C3A20B4261A0AB7",
+                    "size": "1681820",
                     "boards": [
                         {
                             "name": "R3aktor M0 Logger"

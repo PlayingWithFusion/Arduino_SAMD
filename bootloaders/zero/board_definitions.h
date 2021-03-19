@@ -1,12 +1,6 @@
-# Arduino Core for Playing With Fusion SAMD21 development boards
-
-
-## License and credits
-
-This core has been developed by Arduino LLC in collaboration with Atmel.
-
-```
+/*
   Copyright (c) 2015 Arduino LLC.  All right reserved.
+  Copyright (c) 2015 Atmel Corporation/Thibaut VIARD.  All right reserved.
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -21,4 +15,16 @@ This core has been developed by Arduino LLC in collaboration with Atmel.
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-```
+*/
+
+#if defined(BOARD_ID_pwfusion_r3aktor)
+  #include "board_definitions_pwfusion_r3aktor.h"
+#else
+  #error You must define a BOARD_ID and add the corresponding definitions in board_definitions.h
+#endif
+
+// Common definitions
+// ------------------
+
+#define BOOT_PIN_MASK (1U << (BOOT_LOAD_PIN & 0x1f))
+

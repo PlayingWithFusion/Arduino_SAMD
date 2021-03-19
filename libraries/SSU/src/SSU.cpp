@@ -1,12 +1,5 @@
-# Arduino Core for Playing With Fusion SAMD21 development boards
-
-
-## License and credits
-
-This core has been developed by Arduino LLC in collaboration with Atmel.
-
-```
-  Copyright (c) 2015 Arduino LLC.  All right reserved.
+/*
+  Copyright (c) 2020 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -21,4 +14,17 @@ This core has been developed by Arduino LLC in collaboration with Atmel.
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-```
+*/
+
+#include <Arduino.h>
+
+#include "SSU.h"
+
+__attribute__ ((section(".sketch_boot")))
+unsigned char SSU_BOOT[0x8000] = {
+#if defined(ARDUINO_SAMD_MKRGSM1400)
+   #include "boot/mkrgsm1400.h"
+#else
+  #error "Unsupported board!"
+#endif
+};

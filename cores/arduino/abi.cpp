@@ -1,12 +1,5 @@
-# Arduino Core for Playing With Fusion SAMD21 development boards
-
-
-## License and credits
-
-This core has been developed by Arduino LLC in collaboration with Atmel.
-
-```
-  Copyright (c) 2015 Arduino LLC.  All right reserved.
+/*
+  Copyright (c) 2014 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -21,4 +14,24 @@ This core has been developed by Arduino LLC in collaboration with Atmel.
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-```
+*/
+
+#include <stdlib.h>
+
+extern "C" void __cxa_pure_virtual(void) __attribute__ ((__noreturn__));
+extern "C" void __cxa_deleted_virtual(void) __attribute__ ((__noreturn__));
+
+void __cxa_pure_virtual(void) {
+  // We might want to write some diagnostics to uart in this case
+  //std::terminate();
+  while (1)
+    ;
+}
+
+void __cxa_deleted_virtual(void) {
+  // We might want to write some diagnostics to uart in this case
+  //std::terminate();
+  while (1)
+    ;
+}
+

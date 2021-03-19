@@ -1,12 +1,5 @@
-# Arduino Core for Playing With Fusion SAMD21 development boards
-
-
-## License and credits
-
-This core has been developed by Arduino LLC in collaboration with Atmel.
-
-```
-  Copyright (c) 2015 Arduino LLC.  All right reserved.
+/*
+  Copyright (c) 2017 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -21,4 +14,21 @@ This core has been developed by Arduino LLC in collaboration with Atmel.
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-```
+*/
+
+#include <Arduino.h>
+
+#include "SNU.h"
+
+__attribute__ ((section(".sketch_boot")))
+unsigned char sduBoot[0x4000] = {
+#if defined(ARDUINO_SAMD_MKRWIFI1010)
+  #include "boot/mkrwifi1010.h"
+#elif defined(ARDUINO_SAMD_MKRVIDOR4000)
+  #include "boot/mkrvidor4000.h"
+#elif defined(ARDUINO_SAMD_NANO_33_IOT)
+  #include "boot/nano33iot.h"
+#else
+  #error "Unsupported board!"
+#endif
+};

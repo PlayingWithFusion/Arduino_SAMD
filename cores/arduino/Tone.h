@@ -1,11 +1,4 @@
-# Arduino Core for Playing With Fusion SAMD21 development boards
-
-
-## License and credits
-
-This core has been developed by Arduino LLC in collaboration with Atmel.
-
-```
+/*
   Copyright (c) 2015 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
@@ -21,4 +14,15 @@ This core has been developed by Arduino LLC in collaboration with Atmel.
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-```
+*/
+
+#pragma once
+
+#ifdef __cplusplus
+
+#include "Arduino.h"
+
+void tone(uint32_t _pin, uint32_t frequency, uint32_t duration = 0);
+void noTone(uint32_t _pin);
+
+#endif

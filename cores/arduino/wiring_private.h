@@ -1,11 +1,4 @@
-# Arduino Core for Playing With Fusion SAMD21 development boards
-
-
-## License and credits
-
-This core has been developed by Arduino LLC in collaboration with Atmel.
-
-```
+/*
   Copyright (c) 2015 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
@@ -21,4 +14,28 @@ This core has been developed by Arduino LLC in collaboration with Atmel.
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-```
+*/
+
+#pragma once
+
+#include <stdint.h>
+#include <stdio.h>
+#include <stdarg.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+// Includes Atmel CMSIS
+#include "sam.h"
+
+#include "wiring_constants.h"
+
+int pinPeripheral( uint32_t ulPin, EPioType ulPeripheral );
+
+#ifdef __cplusplus
+} // extern "C"
+
+#include "HardwareSerial.h"
+
+#endif

@@ -17,7 +17,7 @@
 
 # PwFusion R3aktor M0 Logger
 # ---------------
-r3aktor.name=FDQ-80001 R3aktor M0 Logger
+r3aktor.name=R3aktor M0 Logger
 r3aktor.vid.0=0x04D8
 r3aktor.pid.0=0xE9AB
 

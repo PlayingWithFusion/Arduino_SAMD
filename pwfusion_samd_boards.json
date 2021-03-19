@@ -1,0 +1,60 @@
+{
+    "packages":
+    [
+      {
+        "name": "robohat",
+        "maintainer": "Playing With Fusion, Inc.",
+        "websiteURL": "https://PlayingWithFusion.com",
+        "email" : "TechnicalSupport@PlayingWithFusion.com",
+        "platforms":
+        [
+          {
+            "name": "Playing With Fusion SAMD Boards",
+            "architecture": "samd",
+            "version": "0.0.10",
+            "category": "Contributed",
+            "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.00.10.zip",
+            "archiveFileName": "PwFusion_SAMD_00.00.10.zip",
+            "checksum": "MD5:D8F8BC79A3E229011ED8BA2CE8DB9000",
+            "size": "1686539",
+            "boards": [
+              {
+                "name": "R3aktor M0 Logger"
+              }
+            ],
+            "toolsDependencies":
+            [
+              {
+                "packager": "arduino",
+                "name": "arm-none-eabi-gcc",
+                "version": "7-2017q4"
+              },
+              {
+                "packager": "arduino",
+                "name": "bossac",
+                "version": "1.8.0-48-gb176eee"
+              },
+              {
+                "packager": "arduino",
+                "name": "openocd",
+                "version": "0.10.0-arduino9"
+              },
+              {
+                "packager": "arduino",
+                "name": "CMSIS",
+                "version": "4.5.0"
+              },
+              {
+                "packager": "arduino",
+                "name": "CMSIS-Atmel",
+                "version": "1.2.0"
+              }
+            ]
+          }
+        ],
+        "tools":
+        [
+        ]
+      }
+    ]
+  }

@@ -2,7 +2,7 @@
     "packages":
     [
       {
-        "name": "robohat",
+        "name": "PwFusion SAMD Boards",
         "maintainer": "Playing With Fusion, Inc.",
         "websiteURL": "https://PlayingWithFusion.com",
         "email" : "TechnicalSupport@PlayingWithFusion.com",

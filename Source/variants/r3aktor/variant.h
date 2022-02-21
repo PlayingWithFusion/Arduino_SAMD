@@ -41,10 +41,12 @@
 extern "C" unsigned int PINCOUNT_fn();
 #endif
 #define PINS_COUNT           (PINCOUNT_fn())
-#define NUM_DIGITAL_PINS     (20u)
-#define NUM_ANALOG_INPUTS    (6u)
+#define NUM_DIGITAL_PINS     (30u)
+#define NUM_ANALOG_INPUTS    (13u)
 #define NUM_ANALOG_OUTPUTS   (1u)
-#define analogInputToDigitalPin(p)  ((p < 6u) ? (p) + 14u : -1)
+
+extern const unsigned char g_adcMapping[];
+#define analogInputToDigitalPin(p)  ((p < (sizeof(g_adcMapping)/sizeof(g_adcMapping[0]))) ? (g_adcMapping[p]) : -1)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
 #define digitalPinToBitMask(P)     ( 1 << g_APinDescription[P].ulPin )
@@ -64,11 +66,11 @@ extern "C" unsigned int PINCOUNT_fn();
 // #define digitalPinToTimer(P)
 
 //Battery
-#define ADC_BATTERY          (20u)
+#define ADC_BATTERY          (30u)
 
 // LEDs
 // ----
-#define PIN_LED              (21u)
+#define PIN_LED              (29u)
 #define LED_BUILTIN          PIN_LED
 
 /*
@@ -80,6 +82,12 @@ extern "C" unsigned int PINCOUNT_fn();
 #define PIN_A3               (17ul)
 #define PIN_A4               (18ul)
 #define PIN_A5               (19ul)
+#define PIN_A6               (24ul)
+#define PIN_A7               (23ul)
+#define PIN_A8               (22ul)
+#define PIN_A9               (00ul)
+#define PIN_A10              (01ul)
+#define PIN_A11              (02ul)
 #define PIN_DAC0             (14ul)
 
 
@@ -89,6 +97,12 @@ static const uint8_t A2   = PIN_A2;
 static const uint8_t A3   = PIN_A3;
 static const uint8_t A4   = PIN_A4;
 static const uint8_t A5   = PIN_A5;
+static const uint8_t A6   = PIN_A6;
+static const uint8_t A7   = PIN_A7;
+static const uint8_t A8   = PIN_A8;
+static const uint8_t A9   = PIN_A9;
+static const uint8_t A10  = PIN_A10;
+static const uint8_t A11  = PIN_A11;
 static const uint8_t DAC0 = PIN_DAC0;
 #define ADC_RESOLUTION      12
 
@@ -97,9 +111,9 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define SPI_INTERFACES_COUNT 2
  
 // SPI
-#define PIN_SPI_MISO  (8u)
-#define PIN_SPI_MOSI  (7u)
-#define PIN_SPI_SCK   (4u)
+#define PIN_SPI_MISO  (22u)
+#define PIN_SPI_MOSI  (23u)
+#define PIN_SPI_SCK   (24u)
 #define PIN_SPI_SS    (5u)
 #define PERIPH_SPI    sercom0
 #define PAD_SPI_TX    SPI_PAD_0_SCK_3
@@ -111,10 +125,10 @@ static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK  = PIN_SPI_SCK;
 
 // SPI1: Connected to SD
-#define PIN_SPI1_MISO (23u)
-#define PIN_SPI1_MOSI (24u)
-#define PIN_SPI1_SCK  (22u)
-#define PIN_SPI1_SS   (26u)
+#define PIN_SPI1_MISO (27u)
+#define PIN_SPI1_MOSI (26u)
+#define PIN_SPI1_SCK  (28u)
+#define PIN_SPI1_SS   (25u)
 #define PERIPH_SPI1   sercom4
 #define PAD_SPI1_TX   SPI_PAD_0_SCK_3
 #define PAD_SPI1_RX   SERCOM_RX_PAD_1
@@ -135,8 +149,8 @@ static const uint8_t SCK1  = PIN_SPI1_SCK;
 #define WIRE_INTERFACES_COUNT 1
 
 // Wire
-#define PIN_WIRE_SDA        (2u)
-#define PIN_WIRE_SCL        (3u)
+#define PIN_WIRE_SDA        (20u)
+#define PIN_WIRE_SCL        (21u)
 #define PERIPH_WIRE         sercom3
 #define WIRE_IT_HANDLER     SERCOM3_Handler
 static const uint8_t SDA = PIN_WIRE_SDA;
@@ -144,9 +158,8 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 
 // USB
 // ---
-#define PIN_USB_DM          (27ul)
-#define PIN_USB_DP          (28ul)
-//JFL #define PIN_USB_HOST_ENABLE (24ul)
+#define PIN_USB_DM          (31ul)
+#define PIN_USB_DP          (32ul)
 
 // I2S Interfaces
 // --------------

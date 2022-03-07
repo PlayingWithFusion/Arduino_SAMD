@@ -89,6 +89,48 @@
                             "version": "1.2.0"
                         }
                     ]
+                },
+                {
+                    "name": "Playing With Fusion SAMD Boards",
+                    "architecture": "samd",
+                    "version": "0.1.0",
+                    "category": "Contributed",
+                    "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.01.00.zip",
+                    "archiveFileName": "PwFusion_SAMD_00.01.00.zip",
+                    "checksum": "SHA-256:A6EB8DD7ED353B7F84CBACE7829723BBB3204E24F3BEB5F39068D4338479A666",
+                    "size": "1535883",
+                    "boards": [
+                        {
+                            "name": "R3aktor M0 Logger"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "arm-none-eabi-gcc",
+                            "version": "7-2017q4"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "bossac",
+                            "version": "1.8.0-48-gb176eee"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "openocd",
+                            "version": "0.10.0-arduino9"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS",
+                            "version": "4.5.0"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS-Atmel",
+                            "version": "1.2.0"
+                        }
+                    ]
                 }
             ],
             "tools": []

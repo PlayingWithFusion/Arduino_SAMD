@@ -1,3 +1,8 @@
+PwFusion SAMD CORE 0.2.0  2022.05.25
+
+* Added support for additional analog inputs and external interrupts to R3actor
+* Fixed defect in analogRead() to allow reading A11 input
+
 PwFusion SAMD CORE 0.1.0  2022.03.07
 
 * PwFusion R3actor production board support

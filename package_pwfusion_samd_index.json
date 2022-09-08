@@ -132,7 +132,7 @@
                         }
                     ]
                 },
-				{
+                {
                     "name": "Playing With Fusion SAMD Boards",
                     "architecture": "samd",
                     "version": "0.2.0",
@@ -173,7 +173,7 @@
                             "version": "1.2.0"
                         }
                     ]
-                }
+                },
                 {
                     "name": "Playing With Fusion SAMD Boards",
                     "architecture": "samd",
@@ -215,7 +215,7 @@
                             "version": "1.2.0"
                         }
                     ]
-                }
+                },
                 {
                     "name": "Playing With Fusion SAMD Boards",
                     "architecture": "samd",

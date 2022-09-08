@@ -3,6 +3,10 @@ PwFusion SAMD CORE 0.2.2  2022.05.25
 * Added transmission complete interrupt to SERCOM.cpp
 * Added writeBytesPending() function to Uart.cpp
 
+PwFusion SAMD CORE 0.2.1  2022.06.24
+
+* Changed Wire SERCOM interrupts to weak linking to allow the user to override the callbacks
+
 PwFusion SAMD CORE 0.2.0  2022.05.25
 
 * Added support for additional analog inputs and external interrupts to R3actor

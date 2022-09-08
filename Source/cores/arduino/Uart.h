@@ -34,6 +34,7 @@ class Uart : public HardwareSerial
     void end();
     int available();
     int availableForWrite();
+    int writeBytesPending();
     int peek();
     int read();
     void flush();

@@ -171,6 +171,12 @@ bool SERCOM::isDataRegisterEmptyUART()
   return sercom->USART.INTFLAG.bit.DRE;
 }
 
+bool SERCOM::isTransmissionCompleteUART()
+{
+  //TXC : Transmission Complete
+  return sercom->USART.INTFLAG.bit.TXC;
+}
+
 uint8_t SERCOM::readDataUART()
 {
   return sercom->USART.DATA.bit.DATA;
@@ -194,6 +200,16 @@ void SERCOM::enableDataRegisterEmptyInterruptUART()
 void SERCOM::disableDataRegisterEmptyInterruptUART()
 {
   sercom->USART.INTENCLR.reg = SERCOM_USART_INTENCLR_DRE;
+}
+
+void SERCOM::enableTransmissionCompleteInterruptUART()
+{
+  sercom->USART.INTENSET.reg = SERCOM_USART_INTENSET_TXC;
+}
+
+void SERCOM::disableTransmissionCompleteInterruptUART()
+{
+  sercom->USART.INTENCLR.reg = SERCOM_USART_INTENCLR_TXC;
 }
 
 /*	=========================

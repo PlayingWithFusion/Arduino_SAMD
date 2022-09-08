@@ -136,6 +136,11 @@ int Uart::availableForWrite()
   return txBuffer.availableForStore();
 }
 
+int Uart::writeBytesPending()
+{
+  return txBuffer.available();
+}
+
 int Uart::peek()
 {
   return rxBuffer.peek();

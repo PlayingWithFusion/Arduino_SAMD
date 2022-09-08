@@ -174,7 +174,7 @@
                         }
                     ]
                 }
-				{
+                {
                     "name": "Playing With Fusion SAMD Boards",
                     "architecture": "samd",
                     "version": "0.2.1",
@@ -183,6 +183,48 @@
                     "archiveFileName": "PwFusion_SAMD_00.02.01.zip",
                     "checksum": "SHA-256:7E26D19FA0CFA43F2C6BD66DE86A21F37F4A82EB788AE25E4C8C7EB3EAF48711",
                     "size": "1646360",
+                    "boards": [
+                        {
+                            "name": "R3aktor M0 Logger"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "arm-none-eabi-gcc",
+                            "version": "7-2017q4"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "bossac",
+                            "version": "1.8.0-48-gb176eee"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "openocd",
+                            "version": "0.10.0-arduino9"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS",
+                            "version": "4.5.0"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS-Atmel",
+                            "version": "1.2.0"
+                        }
+                    ]
+                }
+                {
+                    "name": "Playing With Fusion SAMD Boards",
+                    "architecture": "samd",
+                    "version": "0.2.2",
+                    "category": "Contributed",
+                    "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.02.02.zip",
+                    "archiveFileName": "PwFusion_SAMD_00.02.02.zip",
+                    "checksum": "SHA-256:DDC45C1D5AE0DC14C3313DACD89DAE36C44BA4332C3321261C53A81547CA4285",
+                    "size": "1646429",
                     "boards": [
                         {
                             "name": "R3aktor M0 Logger"

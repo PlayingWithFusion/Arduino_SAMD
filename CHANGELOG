@@ -1,29 +1,31 @@
-PwFusion SAMD CORE 0.2.2  2022.05.25
+#PwFusion SAMD CORE 0.2.9  2022.10.09
+* Merged Latest USB and CDC librarys from arduino SAMD library
 
+
+#PwFusion SAMD CORE 0.2.2  2022.05.25
 * Added transmission complete interrupt to SERCOM.cpp
 * Added writeBytesPending() function to Uart.cpp
 
-PwFusion SAMD CORE 0.2.1  2022.06.24
 
+#PwFusion SAMD CORE 0.2.1  2022.06.24
 * Changed Wire SERCOM interrupts to weak linking to allow the user to override the callbacks
 
-PwFusion SAMD CORE 0.2.0  2022.05.25
 
+#PwFusion SAMD CORE 0.2.0  2022.05.25
 * Added support for additional analog inputs and external interrupts to R3actor
 * Fixed defect in analogRead() to allow reading A11 input
 
-PwFusion SAMD CORE 0.1.0  2022.03.07
 
+#PwFusion SAMD CORE 0.1.0  2022.03.07
 * PwFusion R3actor production board support
 * Swapped Pin 1 and 0 (UART Rx and Tx) to match Feather pin assignment
 
-PwFusion SAMD CORE 0.0.8  2022.02.21
 
+#PwFusion SAMD CORE 0.0.8  2022.02.21
 * PwFusion R3actor board support
 * Tested bootloader and IO
 
 
-PwFusion SAMD CORE 0.0.1  2021.03.19
-
+#PwFusion SAMD CORE 0.0.1  2021.03.19
 * First public release.
 

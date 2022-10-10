@@ -20,7 +20,7 @@
 
 #include "HardwareSerial.h"
 #include "SERCOM.h"
-#include "RingBuffer.h"
+#include "SafeRingBuffer.h"
 
 #include <cstddef>
 
@@ -47,8 +47,9 @@ class Uart : public HardwareSerial
 
   private:
     SERCOM *sercom;
-    RingBuffer rxBuffer;
-    RingBuffer txBuffer;
+
+    arduino::SafeRingBufferN<SERIAL_BUFFER_SIZE> rxBuffer;
+    arduino::SafeRingBufferN<SERIAL_BUFFER_SIZE> txBuffer;
 
     uint8_t uc_pinRX;
     uint8_t uc_pinTX;

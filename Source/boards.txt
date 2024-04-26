@@ -43,3 +43,32 @@ r3aktor.build.vid=0x04D8
 r3aktor.build.pid=0xE9AB
 r3aktor.bootloader.tool=openocd
 r3aktor.bootloader.file=r3aktor/samd21_sam_ba_pwfusion_r3aktor.bin
+
+# PwFusion R3aktor Thermocouple Logger
+# ---------------
+r3aktor.name=R3aktor Thermocouple Logger
+r3aktor.vid.0=0x04D8
+r3aktor.pid.0=0xE5C4
+
+r3aktor.debug.tool=gdb-openocd
+r3aktor.upload.tool=bossac
+r3aktor.upload.protocol=sam-ba
+r3aktor.upload.maximum_size=262144
+r3aktor.upload.maximum_data_size=32768
+r3aktor.upload.use_1200bps_touch=true
+r3aktor.upload.wait_for_upload_port=true
+r3aktor.upload.native_usb=true
+r3aktor.build.mcu=cortex-m0plus
+r3aktor.build.f_cpu=48000000L
+r3aktor.build.usb_product="FDQ-30001 R3aktor Thermocouple Logger"
+r3aktor.build.usb_manufacturer="Playing With Fusion, Inc."
+r3aktor.build.board=FDQ_30001
+r3aktor.build.core=arduino
+r3aktor.build.extra_flags=-DUSE_ARDUINO_MKR_PIN_LAYOUT -D__SAMD21G18A__ {build.usb_flags}
+r3aktor.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+r3aktor.build.openocdscript=openocd_scripts/arduino_zero.cfg
+r3aktor.build.variant=r3aktor-tc
+r3aktor.build.vid=0x04D8
+r3aktor.build.pid=0xE5C4
+r3aktor.bootloader.tool=openocd
+r3aktor.bootloader.file=r3aktor-tc/samd21_sam_ba_pwfusion_r3aktor_tc.bin

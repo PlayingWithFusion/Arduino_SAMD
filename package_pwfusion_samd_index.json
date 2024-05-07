@@ -299,6 +299,51 @@
                             "version": "1.2.0"
                         }
                     ]
+                },
+                {
+                    "name": "Playing With Fusion SAMD Boards",
+                    "architecture": "samd",
+                    "version": "0.3.0",
+                    "category": "Contributed",
+                    "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.03.00.zip",
+                    "archiveFileName": "PwFusion_SAMD_00.03.00.zip",
+                    "checksum": "SHA-256:90CB9B2901D3CBF841C761F574B85C335359689C8F54E5D18450575B12DA9F3A",
+                    "size": "1569478",
+                    "boards": [
+                        {
+                            "name": "R3aktor M0 Logger"
+                        },
+                        {
+                            "name": "R3aktor Thermocouple Logger"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "arm-none-eabi-gcc",
+                            "version": "7-2017q4"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "bossac",
+                            "version": "1.7.0-arduino3"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "openocd",
+                            "version": "0.10.0-arduino9"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS",
+                            "version": "4.5.0"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS-Atmel",
+                            "version": "1.2.0"
+                        }
+                    ]
                 }
             ],
             "tools": []

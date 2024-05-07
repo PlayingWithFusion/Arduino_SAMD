@@ -1,3 +1,7 @@
+#PwFusion SAMD CORE 0.3.0  2024.04.25
+* Added support for R3actor Thermocouple Logger
+
+
 #PwFusion SAMD CORE 0.2.9  2022.10.09
 * Merged Latest USB and CDC librarys from arduino SAMD library
 

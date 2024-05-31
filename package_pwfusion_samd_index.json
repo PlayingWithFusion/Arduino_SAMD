@@ -344,6 +344,54 @@
                             "version": "1.2.0"
                         }
                     ]
+                },
+                {
+                    "name": "Playing With Fusion SAMD Boards",
+                    "architecture": "samd",
+                    "version": "0.4.0",
+                    "category": "Contributed",
+                    "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.04.00.zip",
+                    "archiveFileName": "PwFusion_SAMD_00.04.00.zip",
+                    "checksum": "SHA-256:E4DFBAEDF41D1A12C1F66043318AF99896DCE65B28CCE4437776D91C92F56DD3",
+                    "size": "1693340",
+                    "boards": [
+                        {
+                            "name": "R3aktor M0 Logger"
+                        },
+                        {
+                            "name": "R3aktor Thermocouple Logger"
+                        },
+                        {
+                            "name": "R3aktor RTD Logger"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "arm-none-eabi-gcc",
+                            "version": "7-2017q4"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "bossac",
+                            "version": "1.7.0-arduino3"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "openocd",
+                            "version": "0.10.0-arduino9"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS",
+                            "version": "4.5.0"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS-Atmel",
+                            "version": "1.2.0"
+                        }
+                    ]
                 }
             ],
             "tools": []

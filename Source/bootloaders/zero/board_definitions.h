@@ -21,6 +21,8 @@
   #include "board_definitions_pwfusion_r3aktor.h"
 #elif defined(BOARD_ID_pwfusion_r3aktor_tc)
   #include "board_definitions_pwfusion_r3aktor-tc.h"
+#elif defined(BOARD_ID_pwfusion_r3aktor_rtd)
+  #include "board_definitions_pwfusion_r3aktor-rtd.h"
 #else
   #error You must define a BOARD_ID and add the corresponding definitions in board_definitions.h
 #endif

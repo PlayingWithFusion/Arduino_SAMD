@@ -8,5 +8,8 @@ mv -v samd21_sam_ba_pwfusion_r3aktor.* ../r3aktor/
 BOARD_ID=pwfusion_r3aktor_tc NAME=samd21_sam_ba_pwfusion_r3aktor_tc make clean all
 mv -v samd21_sam_ba_pwfusion_r3aktor_tc.* ../r3aktor_tc/
 
+BOARD_ID=pwfusion_r3aktor_rtd NAME=samd21_sam_ba_pwfusion_r3aktor_rtd make clean all
+mv -v samd21_sam_ba_pwfusion_r3aktor_rtd.* ../r3aktor_rtd/
+
 echo Done building bootloaders!
 

@@ -57,8 +57,8 @@ SIZE=$(ARM_GCC_PATH)size
 
 # -----------------------------------------------------------------------------
 # Boards definitions
-BOARD_ID?=pwfusion_r3aktor
-NAME?=samd21_sam_ba_pwfusion_r3aktor
+BOARD_ID?=pwfusion_r3aktor_rtd
+NAME?=samd21_sam_ba_pwfusion_r3aktor_rtd
 
 # -----------------------------------------------------------------------------
 # Compiler options

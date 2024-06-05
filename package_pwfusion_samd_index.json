@@ -350,7 +350,7 @@
                     "architecture": "samd",
                     "version": "0.4.0",
                     "category": "Contributed",
-                    "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/rtd-variant-fix/Releases/PwFusion_SAMD_00.04.00.zip",
+                    "url": "https://github.com/PlayingWithFusion/Arduino_SAMD/raw/main/Releases/PwFusion_SAMD_00.04.00.zip",
                     "archiveFileName": "PwFusion_SAMD_00.04.00.zip",
                     "checksum": "SHA-256:AB0CC48917528C021001775489CA38850A529FEBDE9FCB8E06A1D497297AE923",
                     "size": "4043739",

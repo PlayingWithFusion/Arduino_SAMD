@@ -9,7 +9,7 @@ This repository contains the board support packages for all "R3aktor core" Ardui
 # Boards
 
 - [R3aktor M0 Logger](https://playingwithfusion.com/productview.php?pdid=157)
-- R3aktor TC Logger (Coming Soon!)
+- [R3aktor TC Logger](https://www.playingwithfusion.com/productview.php?pdid=230)
 - R3aktor RTD Logger (Coming Soon!)
 
 # Related Libraries

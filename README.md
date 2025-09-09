@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/PlayingWithFusion/Arduino_SAMD/assets/77081880/05cc5ad2-8b62-4e97-ac00-dcc4c4118d5d" />
+    <img src="https://www.playingwithfusion.com/images/logo.svg" width="50%" />
 </p>
 
 <h1 align="center">Playing With Fusion R3aktor Board Support Package</h1>
@@ -9,8 +9,8 @@ This repository contains the board support packages for all "R3aktor core" Ardui
 # Boards
 
 - [R3aktor M0 Logger](https://playingwithfusion.com/productview.php?pdid=157)
-- [R3aktor TC Logger](https://www.playingwithfusion.com/productview.php?pdid=230)
-- R3aktor RTD Logger (Coming Soon!)
+- [R3aktor TC Logger](https://www.playingwithfusion.com/productview.php?pdid=229&catid=1018)
+- [R3aktor RTD Logger](https://www.playingwithfusion.com/productview.php?pdid=249&catid=1018)
 
 # Related Libraries
 
